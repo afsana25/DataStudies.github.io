@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantified/Construed Research Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Quantified/Construed: A Data Visualization Research Project</h1>
+        <p>An exploration of personal data and self-representation through visualization.</p>
+        <p>Afsana Mimi, Data Studies(78000)</p>
+        <p>The Graduate Center</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#introduction">Introduction</a>
+        <a href="#methodology">Methodology</a>
+        <a href="#visualization">Visualization</a>
+        <a href="#findings">Findings</a>
+        <a href="#discussion">Discussion</a>
+        <a href="#about">About</a>
+        <a href="#references">References</a>
+       
+    </nav>
+
+    <!-- Introduction Section -->
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>
+            In a world increasingly driven by data, personal metrics are often used to track, analyze, and optimize aspects of daily life. From wearable fitness trackers to mental health apps, these tools promise insights into habits and behaviors that shape our well-being. However, data is never entirely objective; the way it is collected, visualized, and interpreted can significantly shape our understanding of ourselves. This project, titled <em>"Quantified/Construed: A Data Visualization of Daily Habits and Emotional Well-being,"</em> seeks to explore the intricate relationship between data, self-perception, and identity.
+        </p>
+        <p>
+            This exploration is not limited to numerical analysis but also delves into the philosophical and artistic dimensions of self-representation. How do we quantify something as subjective as emotional well-being? Can data visualization capture the nuances of human experience, or does it strip away its complexity? These are the central questions driving this study.
+        </p>
+        <p>
+            At its core, this project aims to answer a simple yet profound question: How can personal data represent facets of selfhood? Over a two-week period, a range of daily activities—such as exercise, screen time, sleep, and social interactions—will be meticulously tracked alongside self-reported emotional states, including happiness, stress, and energy levels. By correlating these activities with emotional metrics, the project will examine the subtle and overt ways in which habitual behaviors impact emotional well-being.
+        </p>
+        <p>
+            The unique aspect of this study lies in its dual visualization approach, creating two contrasting "self-portraits" from the same dataset. The first, a <strong>quantitative visualization</strong>, uses conventional data visualization techniques, such as line graphs, bar charts, and heat maps, to objectively depict correlations and trends. The second, an <strong>abstract artistic visualization</strong>, reimagines the same data through a subjective and interpretive lens, employing symbolic shapes, colors, and metaphors to evoke the emotional nuances embedded within the metrics.
+        </p>
+        <p>
+            This dual approach underscores the variability and subjectivity inherent in data representation. It highlights how visualization choices—ranging from color palettes to chart types—can influence the narratives we construct about ourselves. By engaging with both scientific and artistic methodologies, this project aims to provide a richer, multifaceted understanding of personal identity and emotional well-being.
+        </p>
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="methodology">
+        <h2>Methodology</h2>
+        <p>
+            The methodology section outlines the processes and tools used to collect, process, and analyze the data for this project. Over a two-week period, data was gathered on daily habits and emotional well-being through a combination of automated tracking and manual self-reporting.
+        </p>
+    
+        <h3>Data Collection</h3>
+        <p>
+            The data collection process focused on capturing two main categories of metrics:
+        </p>
+        <ul>
+            <li>
+                <strong>Daily Habits:</strong> Metrics on physical exercise (minutes spent), screen time (hours spent on devices), social interactions (count of meaningful interactions), and sleep (hours and subjective quality rating) were tracked using a combination of smartphone apps and manual logs.
+            </li>
+            <li>
+                <strong>Emotional Well-being:</strong> Happiness, stress, and energy levels were self-reported three times daily (morning, afternoon, and evening) on a scale of 1–10, capturing fluctuations in emotional state throughout the day.
+            </li>
+        </ul>
+        <p>
+            To ensure the reliability of the data, participants were encouraged to log their activities and emotions immediately after key events (e.g., completing a workout, engaging in a social interaction) and at consistent intervals throughout the day. Smartphone tracking apps were used to record objective metrics like screen time and sleep duration.
+        </p>
+    
+        <h3>Data Cleaning and Processing</h3>
+        <p>
+            Once collected, the dataset underwent a rigorous cleaning process to ensure accuracy and consistency:
+        </p>
+        <ul>
+            <li><strong>Handling Missing Data:</strong> Incomplete entries were flagged and either interpolated using surrounding data or excluded from analysis to avoid bias.</li>
+            <li><strong>Outlier Analysis:</strong> Unusual values (e.g., an exceptionally high stress score) were cross-referenced with journal notes or contextual information to determine whether they were valid or the result of reporting errors.</li>
+            <li><strong>Normalization:</strong> Metrics with different scales (e.g., hours of sleep vs. a 1–10 happiness score) were normalized to facilitate comparison and visualization.</li>
+        </ul>
+        <p>
+            This process resulted in a comprehensive, clean dataset that served as the foundation for both the quantitative and abstract visualizations.
+        </p>
+    
+        <h3>Analytical Tools</h3>
+        <p>
+            A range of tools was employed to analyze the data and create visualizations:
+        </p>
+        <ul>
+            <li>
+                <strong>Chart.js:</strong> This JavaScript library was the primary tool for creating quantitative visualizations, including line graphs and bar charts, which allowed for interactive exploration of trends in happiness, stress, and other metrics.
+            </li>
+            <li>
+                <strong>D3.js:</strong> This powerful JavaScript library enabled the creation of custom visualizations, such as heat maps and dynamic scatter plots, to explore correlations and temporal patterns within the dataset.
+            </li>
+            <li>
+                <strong>Canvas API:</strong> Used for abstract visualizations, the Canvas API facilitated the design of symbolic and artistic representations of emotional states. Patterns, colors, and shapes were dynamically mapped to the data to evoke intuitive and emotional resonance.
+            </li>
+            <li>
+                <strong>JavaScript:</strong> Custom JavaScript functions were written to handle data processing, interactivity, and dynamic updates, ensuring that visualizations responded to user input and displayed real-time changes in data patterns.
+            </li>
+        </ul>
+    
+        <h3>Ethical Considerations</h3>
+        <p>
+            Given the personal nature of the data, several ethical considerations were addressed:
+        </p>
+        <ul>
+            <li><strong>Privacy:</strong> All data was anonymized before analysis, and participants were given control over which metrics they wished to share.</li>
+            <li><strong>Informed Consent:</strong> Since I am the participant of the data collection, and  was aware about the purpose of the project and how the data would be used, ensuring my voluntary participation.</li>
+            <li><strong>Transparency:</strong> As I have mentioned I am the solely participant of this data collection, I have provided analysis with summaries of the findings, allowing the other user to see how the data contributed to the overall insights.</li>
+        </ul>
+    
+        <h3>Limitations</h3>
+        <p>
+            Despite rigorous methodology, certain limitations were noted:
+        </p>
+        <ul>
+            <li><strong>Self-Reporting Bias:</strong> Emotional metrics such as happiness and stress are inherently subjective and may be influenced by factors like mood or recall bias.</li>
+            <li><strong>Short Timeframe:</strong> The two-week data collection period may not capture longer-term patterns or trends in emotional well-being.</li>
+            <li><strong>Restricted Metrics:</strong> The study focused on a limited set of metrics, potentially overlooking other influential factors like diet or environmental conditions.</li>
+        </ul>
+
+        <p>
+            The methodology employed in this project ensured a robust and multi-faceted approach to data collection and analysis. By leveraging JavaScript-based tools and libraries, the project effectively captured and visualized the interplay between daily habits and emotional well-being, offering both structured insights and artistic interpretations of the data.
+        </p>
+      
+    </section>
+
+    <!-- Visualization Section -->
+    <section id="visualization">
+        <h2>Visualization</h2>
+        <p>
+            This project explores two distinct and complementary approaches to visualizing the collected data: quantitative and abstract. These visualizations aim to provide both analytical precision and emotional resonance, offering unique perspectives on the relationships between daily habits and emotional well-being.
+        </p>
+
+        <!-- Quantitative Visualization -->
+        <div id="quantitative-visualization">
+            <h3>Quantitative Visualization</h3>
+            <p>Quantitative visualizations employ traditional charting techniques to structure and simplify complex datasets. By focusing on clarity, these visualizations allow viewers to identify trends, correlations, and outliers in a straightforward manner.
+                Quantitative visualizations excel in making the data accessible and actionable, providing a foundational understanding of the dataset’s structure and key trends.
+                Here, a structured representation of trends and correlations in the data, created using tools like Chart.js and D3.js.</p>
+            <canvas id="quantitativeChart" width="800" height="400"></canvas>
+        </div>
+
+        <!-- Abstract Visualization -->
+        <div id="abstract-visualization">
+            <h3>Abstract Visualization</h3>
+            <p>While quantitative visualizations excel in clarity, abstract visualizations aim to evoke a deeper emotional connection to the data. This artistic approach highlights the subjective nature of emotional states and the fluid relationships between habits and well-being.
+                Here, A artistic interpretation of the data, emphasizing subjective emotional experiences through shapes, colors, and textures.</p>
+            <canvas id="abstractChart" width="800" height="400"></canvas>
+        </div>
+    </section>
+
+    <!-- Findings Section -->
+    <section id="findings">
+        <h2>Findings</h2>
+        <p>
+            Through analysis, several notable patterns emerged:
+        </p>
+        <ul>
+            <li>
+                <strong>Exercise and Happiness:</strong> Days with higher levels of exercise consistently correlated with elevated happiness scores, highlighting the positive psychological effects of physical activity. Detailed line charts revealed that even a 20-minute workout session could boost happiness levels by up to 15% compared to sedentary days. The abstract visualization mirrored this with bright, expansive shapes symbolizing bursts of energy and positivity.
+            </li>
+            <li>
+                <strong>Screen Time and Stress:</strong> Prolonged screen time was associated with increased stress levels, reflecting potential overstimulation or mental fatigue. The heat map visualization showed peak stress levels in the evening when screen time exceeded 5 hours. Abstract representations used jagged, angular patterns in darker shades to convey the tension associated with excessive screen use.
+            </li>
+            <li>
+                <strong>Social Interactions:</strong> Days with more frequent meaningful social interactions correlated with higher energy and happiness levels, emphasizing the importance of social connectedness. Quantitative data showed a 20% increase in energy scores on days with 3 or more meaningful interactions. Artistic visuals expressed this through interconnected lines and vibrant colors, symbolizing shared experiences and emotional warmth.
+            </li>
+        </ul>
+        <p>
+            Beyond these core insights, secondary patterns emerged. For example, sleep quality showed a moderate positive correlation with stress reduction, particularly when sleep exceeded 7 hours. Days with low sleep were characterized by muted, fragmented visuals in the abstract representation, illustrating the disjointed nature of emotional states under fatigue.
+        </p>
+        <p>
+            These findings align with existing research on the benefits of exercise, the risks of excessive screen time, and the value of social bonds. However, the dual visualization approach offered unique insights: while the quantitative charts provided clarity on trends, the abstract visuals evoked the emotional resonance of these experiences, offering a more holistic view of well-being.
+        </p>
+    </section>
+
+    <!-- Discussion Section -->
+    <section id="discussion">
+        <h2>Discussion</h2>
+  <!-- Discussion Section -->
+
+  <p>
+    This project underscores the profound impact of visualization techniques on the interpretation and understanding of personal data. By presenting both quantitative and abstract visualizations, it explores the duality between clarity and emotional resonance, offering unique insights into the relationship between daily habits and well-being.
+</p>
+
+<h3>The Role of Quantitative Visualizations</h3>
+<p>
+    Quantitative visualizations provide structured, easy-to-read representations that highlight clear patterns and correlations. Line graphs, bar charts, and heat maps offer objective clarity by numerically encoding data, allowing viewers to identify trends and anomalies. For example:
+</p>
+<ul>
+    <li>A line graph reveals a direct correlation between increased exercise and higher happiness scores, illustrating how even moderate physical activity can positively impact emotional well-being.</li>
+    <li>A heat map captures the relationship between prolonged screen time and elevated stress levels, making it clear which times of the day or week exhibit heightened emotional strain.</li>
+</ul>
+<p>
+    However, these visualizations often fail to evoke the nuances of human experience. A numerical representation might indicate that stress levels are highest in the evening, but it cannot fully convey the tension, fatigue, or frustration an individual feels at the end of a long day. The detachment of quantitative visualizations from the lived experience is their primary limitation.
+</p>
+
+<h3>The Power of Abstract Visualizations</h3>
+<p>
+    Abstract visualizations address the limitations of their quantitative counterparts by emphasizing emotional resonance and subjective interpretation. Through symbolic shapes, colors, and patterns, these visualizations create a bridge between data and human experience. For example:
+</p>
+<ul>
+    <li>Bright, flowing patterns might represent high energy and happiness, evoking a sense of vitality that is immediately relatable.</li>
+    <li>Conversely, dark, jagged forms might symbolize stress or exhaustion, helping viewers intuitively connect with the emotional weight of such states.</li>
+</ul>
+<p>
+    These visualizations are particularly effective in capturing the fluid and multifaceted nature of human emotion. Emotional experiences are rarely linear or predictable, and abstract forms allow for the expression of complexity and ambiguity that numbers and graphs cannot.
+</p>
+<p>
+    Moreover, abstract visualizations encourage personal engagement. Each viewer may interpret the same visualization differently, projecting their own experiences and emotions onto the patterns. This interpretive flexibility fosters deeper reflection, transforming data from a static representation into a dynamic medium for storytelling.
+</p>
+
+<h3>The Subjectivity of Data Representation</h3>
+<p>
+    Both quantitative and abstract visualizations reveal the inherent subjectivity of data representation. The choices made in data collection, cleaning, and visualization are not neutral. For instance:
+</p>
+<ul>
+    <li>Deciding to track exercise and screen time reflects an assumption about their significance to well-being.</li>
+    <li>Assigning numerical scales to emotional states, such as stress and happiness, simplifies complex experiences into discrete values.</li>
+    <li>Selecting colors and shapes for abstract visualizations influences how viewers emotionally respond to the data.</li>
+</ul>
+<p>
+    These decisions shape the narrative conveyed by the data, highlighting the interpretive nature of even the most seemingly objective representations. This subjectivity is not a flaw but an essential aspect of data visualization, reminding us that all data tells a story—and that story is shaped by the storyteller.
+</p>
+
+<h3>Challenges and Limitations</h3>
+<p>
+    While this project successfully demonstrates the value of contrasting visualizations, it also highlights challenges and limitations:
+</p>
+<ul>
+    <li><strong>Balancing Objectivity and Subjectivity:</strong> Quantitative visualizations risk oversimplification, while abstract visualizations may be too open to interpretation. Striking the right balance between clarity and resonance is a constant challenge.</li>
+    <li><strong>Data Quality and Bias:</strong> The accuracy of both visualization types depends on the reliability of the underlying data. Self-reported metrics, such as happiness and stress, are inherently subjective and prone to biases, which can affect the insights derived.</li>
+    <li><strong>Accessibility:</strong> Abstract visualizations may be less accessible to individuals unfamiliar with artistic representations, while quantitative visualizations require a baseline understanding of graphs and statistics.</li>
+</ul>
+
+<h3>Future Directions</h3>
+<p>
+    This dual approach opens several avenues for future research and application:
+</p>
+<ul>
+    <li>
+        <strong>Integration of Interactivity:</strong> Interactive visualizations, such as those that allow users to explore specific data points or simulate different scenarios, could enhance engagement and understanding. For example:
+        <ul>
+            <li>A user could adjust sleep duration to see its potential impact on stress levels in real time.</li>
+            <li>Hovering over abstract patterns could reveal additional contextual information about specific days or activities.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Incorporation of Additional Data Streams:</strong> Future studies could include metrics such as diet, environmental factors, or social media activity to create a more comprehensive picture of well-being.
+    </li>
+    <li>
+        <strong>Experimentation with Advanced Techniques:</strong> Emerging technologies like 3D visualization, augmented reality (AR), and virtual reality (VR) could create immersive experiences, allowing viewers to "step into" the data and experience it spatially and temporally.
+    </li>
+</ul>
+
+<h3>Broader Implications</h3>
+<p>
+    This project challenges the prevailing notion of data as purely objective and neutral. It highlights the dual role of visualization as both a tool for analysis and a medium for storytelling. The findings suggest that quantitative and abstract visualizations are not mutually exclusive but complementary. Together, they provide a richer, more nuanced understanding of personal data, balancing analytical precision with emotional depth.
+</p>
+<p>
+    Ultimately, this project invites us to reconsider our relationship with data. Rather than viewing it as a detached, impersonal record, we can embrace its potential as a narrative tool that connects us more deeply to our experiences and emotions. By integrating clarity with resonance, data visualization can transcend its traditional boundaries, becoming a means of both understanding and expressing the complexity of human life.
+</p>
+    </section>
+   <!-- About Section -->
+   <section id="about">
+    <h2>About the Researcher</h2>
+
+    <p>
+    This project was conceived and conducted by <strong>Afsana Mimi</strong>, a passionate data analysis and visualization student with a profound interest in exploring the intricate connections between data, identity, and well-being. Her academic background and creative inclinations converge in this endeavor, which seeks to challenge conventional perspectives on data as a purely objective and quantitative representation of reality. By embracing a more nuanced and introspective approach, Afsana aims to demonstrate that data visualization is not merely a tool for analysis but also a medium for storytelling and self-discovery.
+</p>
+<p>
+    At the core of this project lies the belief that <strong>data has the power to illuminate personal and collective experiences in meaningful ways</strong>. Inspired by the intersection of science and art, Afsana delves into how abstract concepts such as emotions, memories, and identity can be translated into visual forms that evoke both understanding and empathy. Through the thoughtful curation and design of visualizations, she aspires to <strong>bridge the gap between numbers and narratives</strong>, offering audiences a chance to engage with data on both intellectual and emotional levels.
+</p>
+<p>
+    By questioning traditional assumptions and reframing data as a subjective lens of exploration, this project seeks to expand the boundaries of what is possible in the field of data visualization. <strong>Afsana envisions her work as a call to action for analysts, designers, and storytellers</strong> to consider the human element behind every dataset, ultimately fostering a deeper appreciation for the complexities of the human experience.
+</p>
+</section>
+
+<section id="references">
+<h2>References</h2>
+<ul>
+        <li>Cairo, Alberto. <em>The Truthful Art: Data, Charts, and Maps for Communication</em>. New York: Wiley, 2016.</li>
+        <li>Few, Stephen. <em>Show Me the Numbers: Designing Tables and Graphs to Enlighten</em>. Burlingame: Analytics Press, 2012.</li>
+        <li>Knaflic, Cole Nussbaumer. <em>Storytelling with Data: A Data Visualization Guide for Business Professionals</em>. Hoboken: Wiley, 2015.</li>
+        <li>Tufte, Edward R. <em>The Visual Display of Quantitative Information</em>. Cheshire: Graphics Press, 2001.</li>
+        <li>Dodge, Martin, Rob Kitchin, and Chris Perkins, eds. <em>The Map Reader: Theories of Mapping Practice and Cartographic Representation</em>. Hoboken: Wiley, 2011.</li>
+        <li>Kahneman, Daniel. <em>Thinking, Fast and Slow</em>. New York: Farrar, Straus and Giroux, 2011.</li>
+        <li>Shneiderman, Ben. "The Eyes Have It: A Task by Data Type Taxonomy for Information Visualizations." <em>Proceedings of the IEEE Symposium on Visual Languages</em>, 1996.</li>
+        <li>Csikszentmihalyi, Mihaly. <em>Flow: The Psychology of Optimal Experience</em>. New York: Harper & Row, 1990.</li>
+        <li>Heer, Jeffrey, Michael Bostock, and Vadim Ogievetsky. "A Tour Through the Visualization Zoo." <em>Communications of the ACM</em> 53, no. 6 (2010): 59-67.</li>
+        <li>Munzner, Tamara. <em>Visualization Analysis and Design</em>. Boca Raton: CRC Press, 2014.</li>
+    </ul>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <section><p> <p> <p> <section>© 2024 Afsana Mimi. All rights reserved. </section> </p></p> </p></section>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
